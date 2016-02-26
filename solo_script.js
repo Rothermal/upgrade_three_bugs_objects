@@ -8,7 +8,7 @@ var arrayScout = ["Scout", "6243", "74750", 5];
 
 var array = [arrayAtticus, arrayJem, arrayBoo, arrayScout];
 var objArray =[];
-var person = {};
+
 function Employee (name, empId, salary, reviewScore){
 this.name = name;
 this.empId = empId;
@@ -39,7 +39,7 @@ position = document.getElementById('content');
 //Loop the array, extracting each array and writing information to the DOM
 //Note that the information is not 'clean'
 for(var i = 0; i < objArray.length; i++){
-	objArray[i] = calculateSTI(objArray[i]);
+	 calculateSTI(objArray[i]);
  	newEl = document.createElement('li');
 	newText1 = document.createTextNode(objArray[i].name);
 	newText2 = document.createTextNode(objArray[i].percentOfBonus);
