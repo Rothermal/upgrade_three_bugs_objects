@@ -60,13 +60,7 @@ for(var i = 0; i < objArray.length; i++){
 
 function calculateSTI(person){
 console.log(person);
-//   var newArray = [];
 
-//   newArray[0] = array[0];
-//   
-//   var employeeNumber = array[1];
-//   var baseSalary = array[2];
-//   var reviewScore = array[3];
 
   var bonus = getBaseSTI(person.reviewScore) + getYearAdjustment(person.empId) - getIncomeAdjustment(person.salary);
   if(bonus > 0.13){
@@ -76,7 +70,7 @@ console.log(person);
   person.percentOfBonus = bonus;
   person.totalSalary = Math.round(person.salary * (1.0 + bonus));
   person.totalBonus = Math.round(person.salary * bonus);
-//   console.log(newArray[0] + " " + newArray[1] + " " + newArray[2] + " " + newArray[3]);
+
  console.log('object to be returned',person)
  return person;
 }
